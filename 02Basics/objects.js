@@ -5,8 +5,15 @@
 //   isLoggedIn: true,
 // };
 Object.defineProperty(exports, "__esModule", { value: true });
-var createUser = function (user) {
-    return { name: user.name, email: user.email, isActive: user.isActive };
+var myUser = {
+    _id: "123",
+    name: "shubham",
+    email: "mail@gmail.com",
+    isActive: true,
 };
-var newUser = createUser({ name: 'shubham', email: 'mail@gmail.com', isActive: true });
-console.log(newUser);
+var myCardDetails = {
+    cardnumber: "1234",
+    cardDate: "12/12",
+    cvv: 123,
+};
+myUser.email = "mail2@gmail.com";
