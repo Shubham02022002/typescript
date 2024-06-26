@@ -1,15 +1,12 @@
 "use strict";
+// const user = {
+//   name: "Shubham",
+//   email: "mail@gmail.com",
+//   isLoggedIn: true,
+// };
 Object.defineProperty(exports, "__esModule", { value: true });
-var user = {
-    name: "Shubham",
-    email: "mail@gmail.com",
-    isLoggedIn: true,
+var createUser = function (user) {
+    return { name: user.name, email: user.email, isActive: user.isActive };
 };
-function createUser(_a) {
-    var string = _a.name, boolean = _a.isPaid;
-}
-var newUser = { name: "cheeta", isPaid: false, email: "xyz@gmail.com" };
-createUser(newUser);
-function createCourse() {
-    return { couseName: "ai course", price: 4000 };
-}
+var newUser = createUser({ name: 'shubham', email: 'mail@gmail.com', isActive: true });
+console.log(newUser);
